@@ -1,0 +1,67 @@
+﻿<div id="sidebar">
+    <top-bar *ngIf='currentUser?.username'></top-bar>
+    <div class="panel" *ngIf='!currentUser?.username'>
+        <div class="inner">
+            <p>CNode : Node.js专业中文社区</p>
+            <div>
+                您可以<a href="/signin"> 登录 </a>或<a href="signup"> 注册 </a> , 也可以
+                <a href="/auth/gethub">
+                    <span class="span-info">通过 GitHub 登录</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="inner ads">
+            <a href="https://alinode.aliyun.com/?ref=cnode" target="_blank" class="banner sponsor_outlink" data-label="alinode">
+                <img src="../assets/images/licloud.jpg" alt="">
+            </a>
+            <div class="sep10"></div>
+            <a href="https://alinode.aliyun.com/?ref=cnodehttps://www.ucloud.cn/site/active/gift.html?utm_source=cnodejs&utm_medium=content_pic_pc&utm_campaign=kuai&utm_content=gift&ytag=cnodejs" target="_blank" class="banner sponsor_outlink" data-label="ucloud-banner">
+                <img src="../assets/images/alinode.png" alt="">
+            </a>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">友情社区</span>
+        </div>
+        <div class="inner">
+            <ol class="friendship-community">
+                <li>
+                    <a href="https://" target="_blank">
+                        <img src="../assets/images/ruby-china.png" alt="#">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="https://" target="_blank">
+                        <img src="../assets/images/golangtc-logo.png" alt="#">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="https://" target="_blank">
+                        <img src="../assets/images/phphub-logo.png" alt="#">
+                    </a>
+                </li>
+                <div class="sep10"></div>
+                <li>
+                    <a href="https://" target="_blank">
+                        <img src="../assets/images/tester.png" alt="#">
+                    </a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="header">
+            <span class="col_fade">客户端二维码</span>
+        </div>
+        <div class="inner cnode-app-download">
+            <img width="200" src="../assets/images/shiji.png"><br>
+            <a href="#">客户端源码地址</a>
+        </div>
+    </div>
+</div>

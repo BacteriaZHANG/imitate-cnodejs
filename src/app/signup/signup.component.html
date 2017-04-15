@@ -1,0 +1,41 @@
+﻿<div id="content">
+    <div class="header">
+        <ul class="breadcrumb">
+            <li>
+                <a href="/articles">主页</a>
+                <span class="divider">/</span>
+            </li>
+            <li class="active">注册新账号</li>
+        </ul>
+    </div>
+    <div class="inner">
+        <form action="/auth/github/create" method="post" id="signin_form" class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">通过 GitHub 帐号</label>
+                <div class="controls">
+                    <input class="span-info" type="submit" value="注册新账号">
+                </div>
+            </div>
+        </form>
+        <form action="/auth/gitgub/create" class="form-horizontal" method="post">
+            <div class="control-group" id="controls">
+                <label class="controls">或者</label>
+            </div>
+            <div class="control-group">
+                <label class="control-label">用户名</label>
+                <div class="controls">
+                    <input type="text" class="input-xlarge" id="name" name="name" size="30">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="pass">密码</label>
+                <div class="controls">
+                    <input type="password" class="input-xlarge" id="pass" name="pass" size="30">
+                </div>
+            </div>
+            <div class="form-actions">
+                <input type="submit" class="span-primary" value="关联旧账号">
+            </div>
+        </form>
+    </div>
+</div>

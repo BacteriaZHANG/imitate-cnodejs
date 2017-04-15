@@ -1,0 +1,126 @@
+#content {
+    background-color: #fff;
+    margin-right: 305px;
+}
+
+.header {
+    height: 20px;
+    padding: 10px;
+    background-color: #f6f6f6;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.inner {
+    border-radius: 0 0 3px 3px;
+    background-color: #fff;
+    line-height: 2em;
+    padding: 10px;
+}
+
+
+/*--------------------------------------*/
+
+.breadcrumb>li {
+    display: inline-block;
+}
+
+.breadcrumb a {
+    color: #80bd01;
+    text-decoration: none;
+}
+
+.breadcrumb>li>.divider {
+    padding: 0 5px;
+    color: #ccc;
+}
+
+.breadcrumb>.active {
+    color: #999;
+}
+
+.form-horizontal {
+    display: block;
+    margin-top: 40px;
+}
+
+#signin_form {
+    height: 34px;
+}
+
+.control-group {
+    height: 2em;
+    margin-bottom: 20px;
+}
+
+#controls {
+    height: 20px;
+}
+
+.control-label {
+    float: left;
+    width: 160px;
+    line-height: 20px;
+    padding-top: 5px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.controls {
+    display: block;
+    margin-left: 180px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.span-info,
+.span-primary {
+    display: inline-block;
+    width: auto;
+    line-height: 2em;
+    font-size: 14px;
+    padding: 3px 10px;
+    background-color: #5bc0de;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 2px;
+    color: #fff;
+    transition: background-color .2s ease-in-out;
+}
+
+.input-xlarge {
+    width: 270px;
+    height: 20px;
+    padding: 4px 6px;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    -webkit-transition: border linear .2s, shadow linear .2s;
+    -moz-transition: border linear .2s, shadow linear .2s;
+    -ms-transition: border linear .2s, shadow linear .2s;
+    -o-transition: border linear .2s, shadow linear .2s;
+    transition: border linear .2s, shadow linear .2s;
+}
+
+.input-xlarge:focus {
+    -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+    -moz-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+    box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+    border-color: rgba(82, 168, 236, .8);
+}
+
+.form-actions {
+    padding: 19px 20px 20px;
+    margin: 20px 0;
+    padding-left: 180px;
+}
+
+.span-primary {
+    background-color: #08c;
+}
+
+.span-primary:hover {
+    color: #fff;
+    background-color: #05c;
+}

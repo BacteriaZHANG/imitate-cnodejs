@@ -1,0 +1,139 @@
+#container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#main {
+    flex: 1;
+}
+
+.navbar {
+    width: 100%;
+    position: relative;
+    background-color: #444;
+    font-size: 13px;
+    z-index: 9;
+}
+
+.navbar-inner {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    min-height: 40px;
+}
+
+.navbar .container {
+    width: 100%;
+    min-width: 960px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.brand {
+    width: 120px;
+    height: 28px;
+    padding: 3px 20px;
+    float: left;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #777;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.navbar-search {
+    width: 233px;
+    height: 28px;
+    float: left;
+    margin-top: 6px;
+    position: relative;
+}
+
+.search-query {
+    background: url(../assets/images/images-search.png) no-repeat 4px 4px #888;
+    color: #666;
+    margin-top: 2px;
+    padding: 3px 5px 3px 22px;
+    width: 206px;
+    height: 20px;
+    border: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 15px;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+.nav {
+    position: relative;
+    float: right;
+    display: block;
+    margin: 0 10px 0 0;
+}
+
+.nav li {
+    display: list-item;
+    float: left;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.nav li a {
+    text-shadow: none;
+    color: #ccc;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav li a:hover {
+    color: white;
+}
+
+
+/*-------------- main ------------------*/
+
+#main {
+    position: relative;
+    width: 90%;
+    min-width: 960px;
+    max-width: 1400px;
+    min-height: 400px;
+    margin: 15px auto;
+    flex: 1;
+}
+
+
+/*------------ footer -------------*/
+
+#footer {
+    clear: both;
+    background-color: #fff;
+}
+
+.footer_main {
+    width: 90%;
+    min-width: 960px;
+    max-width: 1400px;
+    margin: 0 auto;
+    color: #ababab;
+    padding: 20px 0;
+    font-size: 13px;
+    line-height: 2em;
+}
+
+.col_fade p {
+    line-height: 20px;
+    vertical-align: bottom;
+}
+
+.col_fade p:last-child a {
+    color: #08c;
+}

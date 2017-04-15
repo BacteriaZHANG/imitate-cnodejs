@@ -1,0 +1,111 @@
+/* sidebar */
+
+.header {
+    padding: 10px;
+    background-color: #f6f6f6;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+}
+
+.panel {
+    font-size: 13px;
+    margin-bottom: 13px;
+}
+
+.inner {
+    padding: 10px;
+    border-radius: 0 0 3px 3px;
+    background-color: #fff;
+    line-height: 2em;
+}
+
+.header .col_fade {
+    color: #444;
+}
+
+p {
+    font-size: 14px;
+    word-break: break-all;
+    margin-bottom: 10px;
+}
+
+.span-info {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    line-height: 2em;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #5bc0de;
+    transition: background-color .2s ease-in-out;
+}
+
+.sep10 {
+    height: 10px;
+}
+
+.unstyled {
+    margin-bottom: 10px;
+}
+
+.unstyled li {
+    line-height: 2em;
+}
+
+.unstyled li div {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.unstyled li div a {
+    max-width: 270px;
+    font-size: 14px;
+}
+
+.dark {
+    color: #666;
+}
+
+.inner ol {
+    margin-top: 4px;
+}
+
+.top_score {
+    color: gray;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+.user_name {
+    max-width: 120px;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.friendship-community img {
+    width: 150px;
+}
+
+.cnode-app-download {
+    text-align: center;
+}
+
+.backtotop {
+    top: 499px;
+    right: 0;
+    display: none;
+    width: 24px;
+    color: gray;
+    padding: 12px 0 12px 5px;
+    position: fixed;
+    cursor: pointer;
+    text-align: center;
+    z-index: 20;
+    background-color: #fff;
+    border-radius: 12px 0 0 12px;
+}

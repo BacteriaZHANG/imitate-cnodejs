@@ -1,0 +1,48 @@
+<router-outlet></router-outlet>
+<div id="content">
+    <div class="panel">
+        <div class="header">
+            <a href="/?tab=all" class="topic-tab current-tab">全部</a>
+            <a href="/?tab=good" class="topic-tab">精华</a>
+            <a href="/?tab=share" class="topic-tab">分享</a>
+            <a href="/?tab=ask" class="topic-tab">问答</a>
+            <a href="/?tab=job" class="topic-tab">招聘</a>
+        </div>
+        <div class="inner">
+            <div id="topic_list">
+                <ul>
+                    <li class="cell" *ngFor='let article of articles | async'>
+                        <a href="/user/" class="user_avatar pull-left">
+                            <img src="../assets/images/{{ article.img }}" title="">
+                        </a>
+                        <span class="reply_count pull-left">
+                                <span class="count_of_replies" title="回复数">{{ article.replyCount }}</span>
+                        <span class="count_separator">/</span>
+                        <span class="count_of_visits" title="点击数">{{ article.visitCount }}</span>
+                        </span>
+                        <a href="/topic/" class="last_time pull-right">
+                            <img src="../assets/images/{{ article.img }}" alt="" class="user_small_avatar">
+                            <span class="last_active_time">{{ article.lastTime }} {{ article.hours }}</span>
+                        </a>
+                        <div class="topic_title_wrapper">
+                            <span class="{{ article.location }}">{{ article.kind }}</span>
+                            <a href="/topic/" class="topic_title" title="">{{ article.topicTitle }}</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="pagination">
+                    <ul>
+                        <li class="disabled"><a href="">«</a></li>
+                        <li class="disabled active"><a>1</a></li>
+                        <li><a href="/?tab=all&page=2">2</a></li>
+                        <li><a href="/?tab=all&page=3">3</a></li>
+                        <li><a href="/?tab=all&page=4">4</a></li>
+                        <li><a href="/?tab=all&page=5">5</a></li>
+                        <li><a>...</a></li>
+                        <li><a href="/?tab=all&page=510">»</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
